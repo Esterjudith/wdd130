@@ -30,15 +30,22 @@ main {
 }
 
 aside { 
-    width:24rem;
+    width: 20rem;
     margin:0.5rem ;
     border: 1px solid black;
     padding: 1rem;
     background-color:rgb(175, 217, 217) ;
     color:black;
+    text-align: center;
 }
 
 aside img {
     width: 200px;
     height: auto;
+}
+
+footer {
+  margin-top: 1em;
+  border-top: 1px solid black;
+  text-align: center;
 }
