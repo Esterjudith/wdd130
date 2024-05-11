@@ -59,3 +59,28 @@ nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
+
+.hero {
+   position: relative;
+   border: 1px solid black;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    border: 1px solid black;
+    top: 10px;
+}
+
+.hero article {
+    position: absolute;
+}
+
+article img {
+    float: right;
+}
