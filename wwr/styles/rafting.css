@@ -18,23 +18,69 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
 }
 
-/* header {
-    padding: 20px;
-    background-color: var(--accent1-color);
-} */
+p {
+    font-family: var(--paragraph-font);
+}
 
 body {
     max-width: 950px;
     margin: 0 auto;
 }
+
+header {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  background-color: #7ac3c3;
+  align-items: center;
+  padding: 1rem;
+  font-family: var(--heading-font);
+}
+
+header img {
+  width: 150px;
+  justify-self: center;
+  border-radius: 50%;
+}
+
+nav ul{
+    display: flex; 
+    justify-content: center;    
+    list-style: none;
+    margin-right: 1rem;
+    
+}
+
+.navLinks {
+    display: block;
+    padding: 0.4rem 2.5rem;
+    background-color: #FCFCFC;
+    border: 1px solid black;  
+    
+}
+.navLinks a {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+
+.navLinks:hover {
+    display: block;
+    background-color:  tomato;
+	font-weight: 700;
+	
+}
+
+main {
+   border: 2px solid purple; 
+   display: flex;
+   flex-direction: column;
+   
+}
 footer a {
     text-decoration: none;
     padding: 1rem;
 }
-
-
-
-
 
 .hero {
     position: relative;
@@ -80,3 +126,44 @@ footer a {
     float: right;
     padding: 1.4rem;
  }
+
+ .history { 
+    align-self: center;
+    max-width: 700px;
+   
+ }
+
+ .history h2 {
+    text-align: center;
+ }
+
+.adventure {
+    display: flex;
+    flex-direction: column;
+}
+
+.advImg {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+.adventure h2 {    
+    text-align: center;
+}
+
+.advImg img {
+    width: 100%;
+    height: auto;
+}
+figcaption {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;    
+}
+
+footer p {
+    margin-right: 4rem;
+}
