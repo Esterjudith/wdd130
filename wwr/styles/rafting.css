@@ -28,7 +28,6 @@ body {
 }
 
 header {
-  border: 1px solid red;
   display: grid;
   grid-template-columns: 40% 1fr;
   background-color: #7ac3c3;
@@ -71,8 +70,7 @@ nav ul{
 	
 }
 
-main {
-   border: 2px solid purple; 
+main { 
    display: flex;
    flex-direction: column;
    
@@ -84,7 +82,7 @@ footer a {
 
 .hero {
     position: relative;
-    border: 2px solid black;
+  
 
  }
  
