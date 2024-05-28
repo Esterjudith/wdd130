@@ -12,6 +12,13 @@
     --paragraph-font: "Poppins", sans-serif;
 
 } 
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
@@ -157,10 +164,112 @@ figcaption {
     text-align: center;
 }
 
+
+/* Employees on contact page */
+.contact-wrapper {
+    max-width: 950px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 0.5rem;    
+}
+.employees {
+    width: 950px;
+    margin: 2rem 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.employees img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.employees > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form */
+form {
+    width: 950px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0.5rem;    
+    display: grid;
+}
+
+form > h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+form div {
+    margin: 1rem;
+}
+
+.form-items > input,
+select,
+textarea {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+}
+.form-items > input {
+    padding: .2rem;
+}
+.text {
+    display: flex;
+    flex-direction: column;    
+}
+
+input[type="text"], 
+input[type="email"],
+textarea {
+    width: 30%;
+}
+
+.radio label {
+  margin-right: 10px ;
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+.checkbox > input{
+    order: 0;
+    
+}
+.checkbox > label{
+    order: 1;
+    margin: 10px;    
+}
+
+button {
+    width: 350px;
+    margin: 0 auto;
+    background-color: #28AFB0;
+    font-weight: 700;
+    padding: 0.4rem;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+}
+
+button:hover {
+    background-color: #2e7b7b;
+}
+
+/* footer */
 footer {
     display: flex;
-    justify-content: flex-end;    
+    justify-content: flex-end; 
+    border-top: 1px solid rgba(0, 0, 0, 0.2);   
+    margin-top: 1rem;
 }
+
 
 footer p {
     margin-right: 4rem;
